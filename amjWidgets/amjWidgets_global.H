@@ -1,0 +1,12 @@
+#ifndef AMJWIDGETS_GLOBAL_H
+#define AMJWIDGETS_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(AMJWIDGETS_LIBRARY)
+#  define AMJWIDGETS_EXPORT Q_DECL_EXPORT
+#else
+#  define AMJWIDGETS_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // AMJWIDGETS_GLOBAL_H
