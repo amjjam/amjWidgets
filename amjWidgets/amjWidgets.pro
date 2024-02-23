@@ -21,10 +21,8 @@ HEADERS += \
     amjWidgets.H \
     amjWidgets_global.H
 
-# Default rules for deployment.
-unix {
-    target.path = $${prefix}/lib
-    headers.path =$${prefix}/include
-    headers.files = amjWidgets.H
-}
-!isEmpty(target.path): INSTALLS += target headers
+target.path = $${prefix}/lib
+headers.path =$${prefix}/include
+headers.files = amjWidgets.H
+
+INSTALLS += target headers
