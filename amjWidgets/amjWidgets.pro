@@ -1,6 +1,8 @@
 
-!defined(prefix,var):prefix=/opt/amj
-
+isEmpty(prefix){
+  prefix=/opt/amj
+}
+  
 QT += core gui widgets
 
 TEMPLATE = lib
